@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background: #1b1b1b;
+}
+
+.card{
+  background: #212a38;
+  width: 75%;
+  margin: 4em auto;
+  padding: 3em 2em;
+  font-family: 'Campton', 'Monterrat', sans-serif;
+  border-radius: 3px;
+}
+
+h2{
+  color: white;
+  line-height: 24px;
+}
+
+h2 span{
+  color: #4cdc57;
+}
+
+p{
+  color: #ddd;
+  font-size: 13px;
+  margin-top: -15px;
+}
+
+button{
+  margin-top: 1.5em;
+  background: #10B981;
+  border: none;
+  padding: 8px 7px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+button:hover{
+  transform: scale(1.04);
+  box-shadow: 0 3px 20px 3px rgba(16 185 129 / .35);
+}
+
+hr{
+  margin-top: 2.5em;
+  height: px;
+  background: #ddd;
+}
+
+.passwords{
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.p1{
+  background: #273549;
+  height: 25px;
+  width: 50%;
+  text-align: center;
+  border-radius: 4px;
+  padding: 2px 1px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+#password1, #password2{
+  margin-top: 2px;
+  color: #4cdc67;
+}
