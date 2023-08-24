@@ -25,7 +25,7 @@ h2 span{
   color: #4cdc57;
 }
 
-p{
+.message{
   color: #ddd;
   font-size: 13px;
   margin-top: -15px;
@@ -61,17 +61,15 @@ hr{
 
 .p1{
   background: #273549;
-  height: 25px;
   width: 50%;
   text-align: center;
   border-radius: 4px;
-  padding: 2px 1px;
   margin-top: 10px;
-  font-size: 1em;
+  font-size: .8rem;
+  padding: .2em;
 }
 
 #password1, #password2{
-  margin-top: 2px;
   color: #4cdc67;
 }
 
