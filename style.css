@@ -1,6 +1,7 @@
-html, body {
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -10,7 +11,10 @@ body{
 .card{
   background: #212a38;
   width: 75%;
-  margin: 4em auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 3em 2em;
   font-family: 'Campton', 'Monterrat', sans-serif;
   border-radius: 3px;
@@ -53,6 +57,10 @@ hr{
   background: #ddd;
 }
 
+p {
+  color: #fff;
+}
+
 .passwords{
   display: flex;
   justify-content: space-between;
@@ -66,7 +74,7 @@ hr{
   border-radius: 4px;
   margin-top: 10px;
   font-size: .8rem;
-  padding: .2em;
+  padding: .8em;
 }
 
 #password1, #password2{
