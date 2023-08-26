@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width" />
     <title>replit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -13,7 +17,7 @@
         Generate a <br />
         <span> random password </span>
       </h2>
-      <p class="message">Never use an insecure password origin</p>
+      <p class="message">Never use an insecure password origin.</p>
 
       <div class="buttons">
         <div class="gen-save-buttons">
@@ -31,7 +35,19 @@
       </div>
     </div>
 
-    <div class="card2 card"></div>
+    <div class="card2 card">
+      <div class="top-message">
+        <p class="card2-text">Your saved passwords.</p>
+
+        <span class="material-icons-outlined down-arrow"> expand_more </span>
+      </div>
+
+      <div class="saved-passwords-con">
+        <div class="inner-saved-passwords-con">
+          <p class="saved-passwords-message"></p>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <script

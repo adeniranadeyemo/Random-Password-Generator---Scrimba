@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background: #1b1b1b;
 }
@@ -11,21 +15,14 @@ body {
 .card {
   background: #212a38;
   width: 70%;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 3rem auto;
   padding: 3em 4em;
   font-family: 'Campton', 'Monterrat', sans-serif;
   border-radius: 3px;
 }
 
-.card2 {
-  top: 75%;
-  padding: 3em 4em;
-}
-
-h2 {
+h2,
+h3 {
   color: white;
   line-height: 24px;
 }
@@ -58,7 +55,7 @@ button {
 }
 
 #button1 {
-  background: #10b981;
+  background: rgb(16, 185, 129);
   color: #fff;
 }
 
@@ -69,7 +66,8 @@ button {
   visibility: hidden;
 }
 
-#button3 {
+#button3,
+.delBtn {
   background: #d00e0e;
   color: #fff;
 }
@@ -119,6 +117,62 @@ p {
 #password1,
 #password2 {
   color: #4cdc67;
+}
+
+.top-message {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.card2-text {
+  font-weight: 200;
+}
+
+.top-message span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.saved-password {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 0.01rem solid rgb(221, 221, 221);
+}
+
+.inner-saved-passwords-con {
+  display: none;
+  transition: display 1.5s ease-in-out;
+}
+
+.inner-saved-passwords-con.active {
+  margin-top: 2.5rem;
+  display: block;
+}
+
+.num-password {
+  display: flex;
+  align-items: flex-end;
+}
+
+.password {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.password-numb {
+  font-size: 0.9rem;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.saved-passwords-message {
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 420px) {
