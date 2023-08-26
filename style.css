@@ -10,14 +10,19 @@ body {
 
 .card {
   background: #212a38;
-  width: 75%;
+  width: 70%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 3em 2em;
-  font-family: "Campton", "Monterrat", sans-serif;
+  padding: 3em 4em;
+  font-family: 'Campton', 'Monterrat', sans-serif;
   border-radius: 3px;
+}
+
+.card2 {
+  top: 75%;
+  padding: 3em 4em;
 }
 
 h2 {
@@ -34,20 +39,54 @@ h2 span {
   margin-top: 0.4em;
 }
 
-button {
-  margin-top: 1.5em;
-  background: #10b981;
-  border: none;
-  padding: 8px 7px;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 500ms ease-in-out;
+.buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
-button:hover {
+button {
+  transition: all 0.7s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  padding: 0.65em;
+}
+
+.gen-save-buttons,
+.del-button {
+  margin-top: 1.5em;
+}
+
+#button1 {
+  background: #10b981;
+  color: #fff;
+}
+
+#button2 {
+  margin-left: 1.5em;
+  background: #fff;
+  color: #212a38;
+  visibility: hidden;
+}
+
+#button3 {
+  background: #d00e0e;
+  color: #fff;
+}
+
+#button1:hover {
   transform: scale(1.04);
-  box-shadow: 0 3px 20px 3px rgba(16 185 129 / 0.35);
+  box-shadow: 0 3px 20px 3px rgba(16 185 129 / 0.6);
+}
+
+#button2:hover {
+  transform: scale(1.04);
+  box-shadow: 0 3px 20px 3px rgba(198, 198, 198, 0.4);
+}
+
+#button3:hover {
+  transform: scale(1.04);
+  box-shadow: 0 3px 20px 3px rgba(255, 19, 19, 0.7);
 }
 
 hr {
