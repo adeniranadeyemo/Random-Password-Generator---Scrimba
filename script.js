@@ -131,6 +131,7 @@ function randomPassword() {
 const addPasswords = function () {
   if (
     passWord1El.textContent &&
+    passWord2El.textContent &&
     !passwordsArray.includes(passWord1El.textContent) &&
     !passwordsArray.includes(passWord2El.textContent)
   ) {
@@ -163,6 +164,8 @@ passwordGenButton.addEventListener('click', function () {
 clearPasswords.addEventListener('click', function () {
   passWord1El.textContent = passWord2El.textContent = '';
   savePasswordsButton.style.visibility = 'hidden';
+  innerPasswordCon.innerHTML = '';
+  passwordsArray.length = 0;
 });
 
 // Event listener that triggers the addPasswords function

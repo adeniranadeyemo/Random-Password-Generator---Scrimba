@@ -176,11 +176,44 @@ p {
 }
 
 @media only screen and (max-width: 420px) {
+  .card {
+    background: #212a38;
+    width: 90%;
+    margin: 3rem auto;
+    padding: 3em 2em;
+    font-family: 'Campton', 'Monterrat', sans-serif;
+    border-radius: 3px;
+  }
+
+  .gen-save-buttons,
+  .buttons,
+  .del-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 0.78rem;
+    padding-block: 1em;
+  }
+
+  #button2 {
+    margin: 0.7rem 0 0 0;
+  }
+
   .passwords {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
+  }
+
+  .card2-text {
+    font-size: 0.8rem;
+  }
+
+  .delBtn {
+    padding-inline: 1em;
   }
 }
 @media only screen and (max-width: 300px) {
